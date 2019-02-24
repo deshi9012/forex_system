@@ -1,0 +1,53 @@
+.page-sidebar .page-sidebar-menu > li {
+  &:nth-child(2) > a {
+    border-top: 0 none;
+  }
+  &.active > a {
+    background: #7ab8e8;
+    i {
+      color: #fff !important;
+    }
+  }
+  &.active:hover > a {
+    background: #7ab8e8;
+  }
+}
+.page-breadcrumb li .caption, .page-breadcrumb li .caption i {
+  color: #000 !important;
+}
+.btn.green:not(.btn-outline).dropdown-toggle:hover, .btn.green:not(.btn-outline).dropdown-toggle:hover, .open > .btn.green:not(.btn-outline).dropdown-toggle:focus {
+  background: lighten(#7ab8e8, 5%);
+}
+.dropdown-menu li.divider {
+  display: none !important;
+}
+.btn-group .dropdown-menu {
+  padding: 5px 0;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  background-color: #2b3643;
+  border-color: #2b3643;
+}
+.pagination > li > a {
+  color: #1d1d1d;
+}
+.form-group.form-md-line-input .form-control.edited:not([readonly]) ~ label:after, .form-group.form-md-line-input .form-control.edited:not([readonly]) ~ .form-control-focus:after, .form-group.form-md-line-input .form-control:focus:not([readonly]) ~ label:after, .form-group.form-md-line-input .form-control:focus:not([readonly]) ~ .form-control-focus:after {
+  background: #7ab8e8;
+}
+.form-group.form-md-line-input .form-control.edited:not([readonly]) ~ .help-block, .form-group.form-md-line-input .form-control:focus:not([readonly]) ~ .help-block {
+  color: #7ab8e8;
+}
+.form-horizontal .form-group.form-md-line-input > label {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.form-horizontal .form-group.form-md-line-input > label span {
+  position: static;
+  padding: 1px 3px;
+}
+.form-horizontal .form-group.form-md-line-input {
+  margin: 0 -15px 10px -15px;
+}
+.portlet.light {
+  background: transparent !important;
+}

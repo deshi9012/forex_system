@@ -1,0 +1,124 @@
+//colors
+$dark-color: #282827;
+$gray-color: #f9f9f9;
+$white-color: #ffffff;
+
+//RESPONSIVE
+$break-xlg: 1599px;
+$break-lg: 1199px;
+$break-tablet: 1024px;
+$break-md: 991px;
+$break-sm: 767px;
+$break-xs: 319px;
+//Font weights
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semiregular: 500;
+$w600: 600;
+$middle: 700;
+$bold: 900;
+
+$font-family: 'Lato', sans-serif;
+
+//Font sizes
+$xs-font-size: 13px;
+$nav-font-size: 20px;
+$circle-icon-size: 17px;
+
+$lg-huge-font-size: 45px;
+$lg-lg-font-size: 40px;
+$lg-big-font-size: 35px;
+$lg-medium-font-size: 27px;
+$lg-normal-font-size: 18px;
+$lg-small-font-size: 15px;
+$lg-xs-font-size: 13px;
+
+$md-huge-font-size: 40px;
+$md-lg-font-size: 38px;
+$md-big-font-size: 30px;
+$md-medium-font-size: 22px;
+$md-normal-font-size: 18px;
+$md-small-font-size: 15px;
+$md-xs-font-size: 12px;
+
+$sm-huge-font-size: 40px;
+$sm-lg-font-size: 35px;
+$sm-big-font-size: 27px;
+$sm-medium-font-size: 20px;
+$sm-normal-font-size: 16px;
+$sm-small-font-size: 14px;
+$sm-xs-font-size: 11px;
+
+$xs-huge-font-size: 30px;
+$xs-lg-font-size: 30px;
+$xs-big-font-size: 23px;
+$xs-medium-font-size: 20px;
+$xs-normal-font-size: 16px;
+$xs-small-font-size: 14px;
+$xs-xs-font-size: 11px;
+
+$xxs-huge-font-size: 27px;
+$xxs-lg-font-size: 20px;
+$xxs-big-font-size: 19px;
+$xxs-medium-font-size: 16px;
+$xxs-normal-font-size: 17px;
+$xxs-small-font-size: 14px;
+$xxs-xs-font-size: 11px;
+
+%fontsize-huge {
+  font-size: $lg-huge-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-huge-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-huge-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-huge-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-huge-font-size }
+}
+%fontsize-lg {
+  font-size: $lg-lg-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-lg-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-lg-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-lg-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-lg-font-size }
+}
+%fontsize-big {
+  font-size: $lg-big-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-big-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-big-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-big-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-big-font-size }
+}
+%fontsize-medium {
+  font-size: $lg-medium-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-medium-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-medium-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-medium-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-medium-font-size }
+}
+%fontsize-normal {
+  font-size: $lg-normal-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-normal-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-normal-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-normal-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-normal-font-size }
+}
+%fontsize-small {
+  font-size: $lg-small-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-small-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-small-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-small-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-small-font-size }
+}
+%fontsize-dd {
+  font-size: $lg-small-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-small-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-small-font-size - 1px }
+  @media screen and (max-width: $break-sm){ font-size: $xs-small-font-size - 1px }
+  @media screen and (max-width: $break-sm){ font-size: $xxs-small-font-size - 1px }
+}
+%fontsize-xs {
+  font-size: $lg-xs-font-size;
+  @media screen and (max-width: $break-lg){ font-size: $md-xs-font-size }
+  @media screen and (max-width: $break-md){ font-size: $sm-xs-font-size }
+  @media screen and (max-width: $break-sm){ font-size: $xs-xs-font-size }
+  @media screen and (max-width: $break-xs){ font-size: $xxs-xs-font-size }
+}

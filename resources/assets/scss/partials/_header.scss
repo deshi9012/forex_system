@@ -1,0 +1,134 @@
+.page-header.navbar.navbar-fixed-top{
+  z-index: 99999!important;
+  @media screen and (max-width: 992px){
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 99999;
+  }
+}
+.page-header-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.user-menu{
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  padding-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.user-menu__menu{
+  position: absolute;
+  list-style-type: none;
+  width: 150px;
+  left: -15px;
+  top:50px;
+}
+.user-menu__item{
+  height: 50px;
+  background:#2b3643;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.page-header.navbar .menu-toggler.sidebar-toggler{
+  position: absolute;
+  top: 16px;
+  left: 150px;
+}
+.page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo{
+  width: 235px;
+}
+
+.page-header.navbar .top-menu .navbar-nav{
+  min-width:170px;
+  background:#364150;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  .dropdown.dropdown-user{
+    width: 100%;
+    &.open{
+      a{
+        background: transparent;
+        span{
+          color: #98a8bc;
+        }
+      }
+    }
+   a{
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+      &:hover{
+        background: transparent;
+        color: #7ab8e8!important;
+        span{
+          color: #7ab8e8!important;
+        }
+      }
+   }
+  }
+  .top-menu__img{
+    width: 25px!important;
+    height: 25px!important;
+    border:1px solid #8493a6;
+    border-radius:50%;
+    margin-right: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+      border-radius:0!important;
+    }
+  }
+
+  ul.dropdown-menu{
+    border: 0;
+    box-shadow: none;
+    right: -20px;
+    margin: 0!important;
+    width: 170px!important;
+    min-width: 0;
+    &::before,
+    &::after{
+      display: none!important;
+      content: none!important;
+    }
+    li{
+      background: #364150;
+      height: 50px;
+      a{
+        background: #364150;
+        font-size: 13px!important;
+        height: 50px;
+        color: #98a8bc!important;
+        text-transform: none;
+        border-top: 1px solid #46515f;
+        width: calc(100% - 32px)!important;
+        margin: 0 auto;
+      }
+      &:hover{
+        a{
+          background: #364150;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .menu-toggler.responsive-toggler{
+    margin-right: auto!important;
+  }
+}

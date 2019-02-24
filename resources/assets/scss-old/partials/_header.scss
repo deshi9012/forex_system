@@ -1,0 +1,35 @@
+.page-header-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.user-menu{
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  padding-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.user-menu__menu{
+  position: absolute;
+  list-style-type: none;
+  width: 150px;
+  left: -15px;
+  top:50px;
+}
+.user-menu__item{
+  height: 50px;
+  background:#2b3643;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.page-header.navbar .menu-toggler.sidebar-toggler{
+  align-self: center;
+  margin-right: auto !important;
+}
+.page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo{
+  width: 235px;
+}

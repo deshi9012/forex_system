@@ -1,0 +1,34 @@
+.page-content{
+  padding-top: 69px!important;
+}
+.page-header.navbar .page-logo{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    width: 120px;
+  }
+}
+.page-header.navbar .menu-toggler.sidebar-toggler{
+  margin: 0;
+}
+
+.page-sidebar.collapse{
+  position: fixed;
+}
+.page-content-white .page-bar{
+  margin: 0;
+  background: #fff;
+  z-index: 9;
+  position: fixed;
+  top:50px;
+  right: 0;
+  width: calc(100% - 235px);
+  @media screen and (max-width: 992px){
+    width: 100%;
+  }
+}
+
+.btn{
+  border-radius: 0;
+}

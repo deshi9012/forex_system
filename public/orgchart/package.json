@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "orgchart",
+        "scope": null,
+        "escapedName": "orgchart",
+        "name": "orgchart",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\xampp\\htdocs\\FXGlobeInternalSystem\\fxglobe_internal_system"
+    ]
+  ],
+  "_from": "orgchart@latest",
+  "_id": "orgchart@1.3.5",
+  "_inCache": true,
+  "_location": "/orgchart",
+  "_nodeVersion": "7.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/orgchart-1.3.5.tgz_1485743584392_0.796806461410597"
+  },
+  "_npmUser": {
+    "name": "dabeng",
+    "email": "dabeng413@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "orgchart",
+    "scope": null,
+    "escapedName": "orgchart",
+    "name": "orgchart",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/orgchart/-/orgchart-1.3.5.tgz",
+  "_shasum": "4256db10ab4db384524c7c9ea0f3ab35561e3fa7",
+  "_shrinkwrap": null,
+  "_spec": "orgchart",
+  "_where": "C:\\xampp\\htdocs\\FXGlobeInternalSystem\\fxglobe_internal_system",
+  "author": {
+    "name": "dabeng",
+    "email": "dabeng413@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dabeng/OrgChart/issues"
+  },
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "html2canvas": "^0.5.0-beta4",
+    "jquery": "^3.1.0",
+    "jquery-mockjax": "^2.2.0"
+  },
+  "description": "Simple and direct organization chart(tree-like hierarchy) plugin based on pure DOM and jQuery.",
+  "devDependencies": {},
+  "directories": {
+    "example": "examples"
+  },
+  "dist": {
+    "shasum": "4256db10ab4db384524c7c9ea0f3ab35561e3fa7",
+    "tarball": "https://registry.npmjs.org/orgchart/-/orgchart-1.3.5.tgz"
+  },
+  "gitHead": "5996575ed004bd5f1580cb5a08d03cd6daa3c179",
+  "homepage": "https://github.com/dabeng/OrgChart#readme",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "organization",
+    "chart",
+    "orgchart",
+    "tree",
+    "tree-like",
+    "tree-view"
+  ],
+  "license": "MIT",
+  "main": "./dist/js/jquery.orgchart.js",
+  "maintainers": [
+    {
+      "name": "dabeng",
+      "email": "dabeng413@gmail.com"
+    }
+  ],
+  "name": "orgchart",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabeng/OrgChart.git"
+  },
+  "scripts": {},
+  "style": [
+    "./dist/css/jquery.orgchart.css"
+  ],
+  "version": "1.3.5"
+}

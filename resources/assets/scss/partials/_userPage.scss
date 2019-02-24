@@ -1,0 +1,229 @@
+.userPage{
+  padding-top: 50px;
+  margin: 0 -20px;
+  display: flex;
+  &__sidebar{
+    width: 312px;
+    background: #f6f7f9;
+    padding: 0 35px;
+    bottom: 0;
+    z-index: 999;
+    top: 125px;
+    left: 235px;
+    position: fixed;
+    .btn{
+      display: block;
+      margin: 30px auto 38px auto;
+    }
+    .mCustomScrollBox{
+      max-width: none!important;
+      margin: 0 -35px 0 0!important;
+    }
+    .mCSB_dragger_bar{
+      opacity: 0!important;
+    }
+    &:hover{
+      .mCSB_dragger_bar{
+        opacity: 1!important;
+      }
+    }
+    @media screen and (max-width:991px){
+      left:0;
+      top:120px;
+    }
+  }
+  &__img{
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    border:4px solid #e3e8ee;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 38px auto;
+    img{
+      width: 100%;
+    }
+  }
+  &__usertitle{
+    text-transform: uppercase;
+    font-weight:700;
+    text-align: center;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e3e8ee;
+    h3{
+      font-size: 18px;
+      line-height: 1em;
+      color:#2b3643;
+      font-weight:700;
+      margin: 0;
+      padding: 0 0 15px 0;
+    }
+    h4{
+      font-size: 14px;
+      line-height: 1em;
+      color:#767f8b;
+      font-weight:700;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__connect{
+    padding: 32px 0;
+    font-size: 14px;
+    font-weight: 300;
+    div{
+      margin-bottom: 17px;
+      &:last-of-type{
+        margin:0;
+      }
+    }
+    span{
+      color:#767f8b;
+    }
+    i{
+      color: #364150;
+      margin-right: 17px;
+    }
+  }
+  &__info{
+    padding:16px 0;
+    border-top:1px solid #e3e8ee;
+    font-weight: 600;
+    span{
+      display: block;
+      &:nth-of-type(1){
+        color: #acb0b5;
+        font-size: 12px;
+        line-height: 1em;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+      }
+      &:nth-of-type(2){
+        color: #5f646b;
+        font-size: 16px;
+        line-height: 1em;
+      }
+    }
+  }
+  &__table{
+    width:calc(100% - 332px);
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 50px;
+    margin-left: 312px;
+    .files{
+      width: 100%!important;
+    }
+    .btn{
+      margin-top: 50px;
+    }
+    .form-actions{
+      padding: 0;
+      margin-top:50px;
+      margin-right: 0;
+      .btn{
+        margin-top: 0;
+      }
+    }
+    #table_wrapper .row:nth-of-type(1) .col-sm-6:nth-of-type(2){
+      display:none;
+    }
+  }
+}
+.page-sidebar-closed{
+  .userPage__sidebar{
+    left: 45px;
+  }
+}
+.userPopup{
+  position: absolute;
+  z-index: 99999;
+  top:100%;
+  left:0;
+  width:220px;
+  background: #fff;
+  font-size: 13px;
+  color: #666e78;
+  text-align: left;
+  height:0;
+  transition:.2s;
+  padding: 0 20px;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 35px -5px rgba(0, 0, 0, 0.4);;
+  &:before{
+    display: block;
+    content: '';
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #e3e8ee;
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+  &:after{
+    display: block;
+    content: '';
+    width: 100%;
+    height:15px;
+    background: #fff;
+    position: absolute;
+    left:0;
+    top: -15px;
+  }
+  div>div{
+    margin-bottom: 15px;
+    width: 100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    opacity: 0;
+    transition: .26s;
+  }
+  i{
+    margin-right: 8px;
+    color: #384251;
+  }
+  >i{
+    display: block;
+    width: 10px;
+    margin: 0 auto;
+    font-size: 9px;
+    cursor: pointer;
+    height: 5px!important;
+  }
+  &.exist{
+    display:flex;
+  }
+  &.shown{
+    height:180px;
+    padding: 20px;
+    div{
+      opacity: 1;
+    }
+  }
+}
+
+.user-table{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.userPage__table #table_wrapper .row:nth-of-type(2) .col-sm-12{
+  display: block;
+  #dzContainer{
+    height:117px;
+    flex-direction:row;
+    .dz-default.dz-message{
+      display: flex;
+      align-items: center;
+      padding-left:36px;
+      span{
+        margin:0;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.introduction{
+  text-align: center;
+  font-weight: 700;
+  &__shelf{
+    position: relative;
+    margin: -69px -20px 0 -20px;
+    padding: 50px 0;
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/shelfbackground.jpg");
+      background-size:contain;
+      opacity: .4;
+    }
+  }
+  input{
+    position: relative;
+    z-index: 9;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+    &:active{
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+    &:disabled{
+      background: transparent;
+    }
+  }
+  &__heading{
+    font-size: 33px;
+  }
+  &__subheading{
+    font-size: 20px;
+    color: #707070;
+  }
+  img{
+    height: 270px;
+    cursor: pointer;
+  }
+  &__image{
+    margin: 50px 0;
+  }
+  .btn{
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+  }
+}

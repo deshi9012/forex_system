@@ -1,0 +1,48 @@
+.position-tree{
+  //&__list{
+  //  display: flex;
+  //  flex-wrap:wrap;
+  //  border:1px solid #000;
+  //  margin: 5px;
+  //}
+  //&__item{
+  //  list-style-type: none;
+  //  display: inline-block;
+  //  span{
+  //    width: 70px;
+  //    height: 70px;
+  //    display: inline-block;
+  //    border:1px solid #000;
+  //    margin: 5px;
+  //  }
+  //}
+  height:0;
+  overflow: hidden;
+}
+.orgchart{
+  position: relative;
+  max-width:calc(100vw - 290px);
+  height: calc(100vh - 140px);
+  background-image:none;
+  overflow-x:auto;
+  display: flex;
+  box-shadow: 0 0 10px #364150;
+  @media screen and (max-width: 992px){
+    max-width: 100vw;
+  }
+}
+.orgchart .title,
+.orgchart .content{
+  cursor: pointer;
+}
+.orgchart .node .title{
+  position: relative;
+  overflow: visible;
+}
+.node .title span:last-of-type{
+  color: #364150;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

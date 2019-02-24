@@ -1,0 +1,197 @@
+.navbar.navbar-default.navbar-static-top{
+  background:#364150!important;
+  margin:0!important;
+  border:none!important;
+  .navbar-brand{
+    color: #364150!important;
+  }
+}
+.login{
+  height: calc(100vh + 15px);
+  margin-top: -15px;
+  background: #364150;
+  form{
+    img{
+      width: 250px;
+      position: absolute;
+      left: 50%;
+      top:-82px;
+      transform: translate(-50%, -50%);
+    }
+    width:530px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background: #28313f;
+    border-radius: 5px;
+    padding: 75px;
+    .help-block{
+      position: absolute;
+      top: 0;
+      left: 58px;
+      color:#f44e4e;
+      background: #28313f;
+      &__hidden{
+        display: none;
+      }
+      strong{
+        font-weight: 300;
+        font-size: 20px;
+      }
+    }
+  }
+  h3{
+    color: #dae4ee;
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 90px;
+    text-align: center;
+  }
+  &_small{
+    form{
+      padding-bottom: 45px;
+    }
+    h3{
+      padding-bottom: 80px;
+    }
+  }
+  input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #324456;
+    color:#bdd1eb;
+    font-size: 20px;
+    padding-left: 60px;
+    border-radius:0;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color:#475b75;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color:#475b75;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color:#475b75;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color:#475b75;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  }
+  .has-error{
+    .inputHolder:before{
+      color:#f44e4e;
+    }
+    input{
+      border-bottom: 1px solid #f44e4e;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#f44e4e;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color:#f44e4e;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color:#f44e4e;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color:#f44e4e;
+      }
+    }
+  }
+  .checkbox{
+    color:#6e8197;
+    position: absolute;
+    right: 75px;
+    font-size: 15px;
+    font-weight:300;
+    label{
+      padding-left: 60px;
+      display: flex;
+      align-items: center;
+      &:before{
+        display:inline-block;
+        margin-right: 10px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border:1px solid #6e8197;
+        border-radius: 2px;
+        font-family: FontAwesome;
+        font-size: 10px;
+        text-align: center;
+        line-height: 15px;
+      }
+    }
+    input{
+      margin-left: -52px;
+      display: none;
+    }
+    input:checked + label{
+      &:before{
+        content: "\f00c";
+      }
+    }
+  }
+  button{
+    margin-top: 75px;
+    width: 100%;
+    font-weight: 600;
+    &.btn_short{
+      width: 270px;
+      margin:75px auto 0 auto;
+      display: block;
+    }
+  }
+  a{
+    width: 100%;
+    margin-top: 35px;
+    font-weight: 300;
+    &.btn_transparent{
+      background: transparent!important;
+      border:none!important;
+      font-size: 17px;
+      line-height: 1em!important;
+      color:#7ab8e8;
+      height: auto!important;
+      text-transform: none;
+    }
+  }
+}
+
+.inputHolder{
+  position: relative;
+  &:before{
+    content: "\e005";
+    display: block;
+    position: absolute;
+    left:8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f3f4f5;
+    font-family: 'simple-line-icons';
+  }
+  &_text{
+    &:before{
+      content:"\e005";
+    }
+  }
+  &_password{
+    &:before{
+      content:"\e08e";
+    }
+  }
+  &_email{
+    &:before{
+      content:"\e086";
+    }
+  }
+}
